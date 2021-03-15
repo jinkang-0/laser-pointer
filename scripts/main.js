@@ -32,10 +32,10 @@ function setup() {
     walls.push(wall);
   }
 
-  walls.push(new Wall(0, 0, canvas.width, 0));
-  walls.push(new Wall(0, 0, 0, canvas.height));
-  walls.push(new Wall(canvas.width, 0, canvas.width, canvas.height));
-  walls.push(new Wall(0, canvas.height, canvas.width, canvas.height));
+  walls.push(new Wall(-1, -1, canvas.width, -1));
+  walls.push(new Wall(-1, -1, -1, canvas.height));
+  walls.push(new Wall(canvas.width+1, -1, canvas.width+1, canvas.height+1));
+  walls.push(new Wall(-1, canvas.height+1, canvas.width+1, canvas.height+1));
 
 }
 setup();
